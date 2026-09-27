@@ -6,7 +6,7 @@
 - `3` : create files what we require
 ## Add into workingrea
 - `git status`
-- `git add <File Name`
+- `git add <File Name>`
 - `git status`
 - `git add <file Name>`
 - `git commit -m provide required massage in duble`
