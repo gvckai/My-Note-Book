@@ -108,13 +108,13 @@
 
 - ## Clint Server Architecture : **Dily Doing DevOps**
  - Any how big problem comes in client server: here only solve 
- - if you can not access sercer are application
+ - if you can not access server are application
    - First check with Intenet
-   - Second DNS be problam
-- *Serviside Problems**
+   - Second DNS problem may be
+- *Server Problems**
  - 500 error in git hub
  - internal server erro
-   - it will work with submarin cable map
+   - it will work with submerain cable map
 ## How to work internet
  - 
  ## Who is server , Who is client
