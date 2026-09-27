@@ -25,7 +25,51 @@
              Evwryone of us should be happy
 - Bank: stackhilder fot bank , customers, employees, management and leadership,        investore, RBI, IT deporment, marketing, sales operation, security team, admin teams, partners, etc.. 
 
-**Schools** : -> Students, Teachers staff, Non teaching Staff, Leadership, Investers, Edication Deportment etc.
+**Schools** : 
+         -  Students, Teachers staff, Non teaching Staff, Leadership, Investers, Edication Deportment etc.
 
-**DeoOps** --> Teammembers, Management, Developers Testing Team, Operation Team, Admin Team,
+**DeoOps**
+         - Teammembers, Management, Developers Testing Team, Operation Team, Admin Team,
 
+## SDLC -> Software Develipment Lifecicle
+ - client Perspective
+ - End user perspective 
+
+# Why we need  Multiple environments?
+- DEV Env
+- QA Env
+- SIT Env
+- UAT Env
+- PRE-PROD Env
+- PERF Env- Porfamence  
+- SEC  Env
+- PROD Env
+** DevOps Team Main Resposibles Only two things**
+ - 1 Faster realses 
+ - 2 Less defects 
+** When we join New organization we should understand their process
+    - Understand their process
+    - Work with the process
+    - Do a simple POC -> Proof of concepts 
+    - Impliment in DEV, SIT, UAT
+    - Take it PROG
+- we should not complain above new organisatio approch based on theit requirement they build up 
+
+# Agail Process
+## Agail Process
+ **Sprints**
+    - Sign-Up and Signin - Authontication and Authoraization
+    - Product Calalogue
+    - Cart
+    - Order Management
+    - Payment Module
+    - Tracking System
+    - Delivery Module
+
+# Agile with DeOps
+ **One Month sign up and sign in
+    - First DAy
+ ** Developers develops Enter Your First Name**
+ ** Developers devlops Enter Your Last Name**
+ ## Test the application daily base
+**DevOps Team should keep the application highly available , autoscale, and Security, Cost Optimisation**
