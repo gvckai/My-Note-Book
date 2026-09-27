@@ -137,4 +137,36 @@
   - ## How to find user id information# *id* it shows user nsme and user id , group name group id 
   - ## How to find which os we use# *uname* **command it will print system information**
 
-  # CRUD
+  # CRUD - 
+     - Create 
+     - Read 
+     - Update 
+     - Delete
+## in Linux 
+ - Creating Files / Folders
+ - Read Files / Folders
+ - Update File / Folder
+ - Deletin Files / Folders 
+## How to create empty file 
+ - ``touch filename``: it creates empty file 
+## if you want to see the files and Folder/ Directories
+ - ``ls`` : It isits the file and folders 
+ - ``ls -l`` it lists subdirectories in leanthy format
+ - ``ls -a` it prits all files including hidden file
+ - ``ls -lr` It prints revers alphabitical order
+ - ``ls -t` it prints lonlenth wit time
+ -``ls -ltr`` 
+## How to create directory
+ - ``mkdir`` it command is used to create directory
+## How to enter data in to file 
+ - **cat > filename > enter > enter the text in the file > enter > ctrl+d-save and  the text in to file**
+ - **cat >> filename | press Enter | Provide / Enter the text in existing file |press Enter | Ctrl + d** 
+  - Cat commend is used to read the file
+ - ``cp`` copy the file 
+ - **scp** This command is used to copy files directly two Linex server
+  - `scp` : **Secure Copy Protocol**
+- **scp -r** : copy the entire directory with files securely 
+- *syntax* : `scp -r /path/local/foldername user@ip addess:/path/to/remote/destination/`
+ - **If you want to copy file with directory we  : `-r` means recursive
+ - **If you want cut / rename  the to the file we use `mv` command we use ` mv old file name new file name `mv **source and destination**
+ - **cd .. - one step back**
