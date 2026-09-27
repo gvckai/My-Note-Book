@@ -138,8 +138,6 @@
   - How to find user id information# **id** it shows user nsme and user id , group name group id 
   - How to find which os we are using# **uname** **command it will print system information**
     - **uname -a** : It print all info of Sys info Like versin, which os, kernal 
-
-<<<<<<< HEAD
   # CRUD - 
      - Create 
      - Read 
@@ -173,6 +171,3 @@
  - **If you want to copy file with directory we  : `-r` means recursive
  - **If you want cut / rename  the to the file we use `mv` command we use ` mv old file name new file name `mv **source and destination**
  - **cd .. - one step back**
-=======
-  # CRUD
->>>>>>> c81a34c6f0ddb5b5810b1664242e26671a5fb47d
