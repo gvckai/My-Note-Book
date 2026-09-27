@@ -17,11 +17,12 @@
   - git remote -v
   - 
 ## git remote set-url origin https://YOUR_TOKEN@github.com/gvckai/My-Note-Book.git
-- Syntax:  git remote set-url origin https://YOUR_TOKEN@github.com/github-user-name/Repository-name.git
+- Syntax: # git remote set-url origin https://YOUR_TOKEN@github.com/github-user-name/Repository-name.git
 
 # Who are stakeholders
--` Family :` Everyone part of the system are stackholders
+
+- Family : Everyone part of the system are stackholders
              Evwryone of us should be happy
--`Bank:` stackhilder fot bank , customers, employees, management and leadership,        investore, RBI, IT deporment, marketing, sales operation, security team, admin teams, partners, etc.. 
+- Bank: stackhilder fot bank , customers, employees, management and leadership,        investore, RBI, IT deporment, marketing, sales operation, security team, admin teams, partners, etc.. 
 `
 
