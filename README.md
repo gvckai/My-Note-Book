@@ -166,7 +166,18 @@
  - **scp** This command is used to copy files directly two Linex server
   - `scp` : **Secure Copy Protocol**
 - **scp -r** : copy the entire directory with files securely 
+    - rsync is faster than scp for large transfers because it compresses data and can resume interrupted downloads/uploads
+- `If you used custom ssh  port use **scp -p 2222 /path/to/file username@server name /destination IP address**
 - *syntax* : `scp -r /path/local/foldername user@ip addess:/path/to/remote/destination/`
  - **If you want to copy file with directory we  : `-r` means recursive**
  - **If you want cut / rename  the to the file we use `mv` command we use ` mv old file name new file name `mv** **source and destination**
  - **cd .. - one step back**
+
+ ## How to downlode file / folder 
+ - if you want to download files and folder by using `wget provide URL`
+ - If you use `cutl` command it will show on the screen itself fron the internet
+   - curl command is used in scripting and api
+   - if you wan to see the content in the spot we use `cutl`
+- **If you want to search the perticuler ward in the file**
+    - `cat filename | grep word name`
+    - *Syntax: cat password | grep linux*
