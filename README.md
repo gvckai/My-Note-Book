@@ -125,9 +125,10 @@
  
  - `pwd` : it prints Present working directory `home/vijay$` 
  - `cd` : is is used to change directory `cd /home/vijay` -`/home/vijay$` 
- ## If you want create/generate kyes
-  - `ssh-keygen -f devsecops` :provie *filename what we want* **It will create /generate  keyes public and pravite**
-  - ssh : Secure shell, this is one protocall port no **22**
+ ## If you want create/generate ssh kyes by using bellow command 
+  - `ssh-keygen -f devsecops` :provide *filename what we want* **It will create /generate  ssh keyes (public and pravite)**
+  - ssh : Secure shell, this is one protocall
+  - Port no **22**
   - Publick Key and Pravite Key locatis is  
 
   - ## Absolute Path: from the begining *cd /c/home/vijay*
@@ -135,6 +136,7 @@
   - ## How to connect server *ssh -i my pravite kay username@ip address* 
   - ## How to find user # *whoami*
   - ## How to find user id information# *id* it shows user nsme and user id , group name group id 
-  - ## How to find which os we use# *uname* **command it will print system information**
+  - ## How to find which os we are using# *uname* **command it will print system information**
+    - uname -a : It print all info of Sys info Like versin, which os, kernal 
 
   # CRUD
