@@ -85,12 +85,36 @@
 ## Test the application daily base
 
 **DevOps Team should keep the application highly available , autoscale, and Security, Cost Optimisation**
-# What is Computer
+## What is Computer
 
 **A Device which has cpu RAM, Storage and OS is called Computer we can assigin  IP**
    
-**Laptop --> Personal Use**
+- **Laptop --> Personal Use**
 
-**Server --> To host Application**
+- **Server --> To host Application**
     
-**Mobile --> to calling**
+- **Mobile --> to calling**
+
+- **There two type of distribution/flavours in Linux**
+ - *Enterprise* **immediate support**
+ - *Community Edition* **Free Edition : No Support** 
+ - *RedHat == CentOs == AllmaLinux == AWS Linux*
+
+ - ## Before creating Server in any cloud like AWS AZURE and GCP first Create Create Security Groups
+  - **You can call Security groups or Firewall**
+   - There are two type of tafics 
+    - Ingress *Incoming trafic*
+    - Egress *Out going trafic* **We will allow everyone mostly**
+
+- ## Clint Server Architecture : **Dily Doing DevOps**
+ - Any how big problem comes in client server: here only solve 
+ - if you can not access sercer are application
+   - First check with Intenet
+   - Second DNS be problam
+- *Serviside Problems**
+ - 500 error in git hub
+ - internal server erro
+   - it will work with submarin cable map
+## How to work internet
+ - 
+ ## Who is server , Who is client
