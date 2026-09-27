@@ -112,9 +112,29 @@
    - First check with Intenet
    - Second DNS problem may be
 - *Server Problems**
- - 500 error in git hub
+ - 500 error in github outage
  - internal server erro
-   - it will work with submerain cable map
 ## How to work internet
- - 
+ -  - it will work with submerain cable
  ## Who is server , Who is client
+
+ ## Authentication mechanism
+ - **What you know** : User Name and Password -less Secure
+ - **What you have** : User Name and OTP / Keys
+ - **What you are** : Fingurprint, retina plam - Most Secure
+ 
+ - `pwd` : it prints Present working directory `home/vijay$` 
+ - `cd` : is is used to change directory `cd /home/vijay` -`/home/vijay$` 
+ ## If you want create/generate kyes
+  - `ssh-keygen -f devsecops` :provie *filename what we want* **It will create /generate  keyes public and pravite**
+  - ssh : Secure shell, this is one protocall port no **22**
+  - Publick Key and Pravite Key locatis is  
+
+  - ## Absolute Path: from the begining *cd /c/home/vijay*
+  - ## Relative Path: from the current location *cd vijay*
+  - ## How to connect server *ssh -i my pravite kay username@ip address* 
+  - ## How to find user # *whoami*
+  - ## How to find user id information# *id* it shows user nsme and user id , group name group id 
+  - ## How to find which os we use# *uname* **command it will print system information**
+
+  # CRUD
