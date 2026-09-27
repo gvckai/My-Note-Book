@@ -79,7 +79,7 @@
 # Agile with DeOps
 
 **One Month sign up and sign in**
-- **First Day**
+- ## First Day
   - **Developers develops Enter Your First Name**
   - **Developers devlops Enter Your Last Name**
 ## Test the application daily base
