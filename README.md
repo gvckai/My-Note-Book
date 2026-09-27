@@ -79,9 +79,9 @@
 # Agile with DeOps
 
 **One Month sign up and sign in**
-- First DAy
- **Developers develops Enter Your First Name**
- **Developers devlops Enter Your Last Name**
+- **First Day**
+  - **Developers develops Enter Your First Name**
+  - **Developers devlops Enter Your Last Name**
 ## Test the application daily base
 
 **DevOps Team should keep the application highly available , autoscale, and Security, Cost Optimisation**
