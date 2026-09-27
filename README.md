@@ -10,6 +10,7 @@
 - `git status`
 - `git add <file Name>`
 - `git commit -m provide required massage in duble`
+
 **You can stage tracked modified files and commit them in a single command using the**
 - git commit -am "Your Commit Massage
 ## Please  use git pull before push
