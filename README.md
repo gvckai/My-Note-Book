@@ -13,6 +13,9 @@
 
 **You can stage tracked modified files and commit them in a single command using the**
 - git commit -am "Your Commit Massage"
+ - `a --all`    :Automatically stages all files that have been **modified** or **deleted**
+ - `m Specifies`: the commit message directly inline
+
 ## Please  use git pull before push
 ## Whenever we use  # git push -u origin main first time we get error  
 # How to resolve this error 
@@ -70,13 +73,16 @@
     - Delivery Module
 
 # Agile with DeOps
- **One Month sign up and sign in**
-    - First DAy
- ** Developers develops Enter Your First Name**
- ** Developers devlops Enter Your Last Name**
- ## Test the application daily base
+
+**One Month sign up and sign in**
+- First DAy
+ **Developers develops Enter Your First Name**
+ **Developers devlops Enter Your Last Name**
+## Test the application daily base
+
 **DevOps Team should keep the application highly available , autoscale, and Security, Cost Optimisation**
 # What is Computer
+
 **A Device which has cpu RAM, Storage and OS is called Computer we can assigin  IP**
    
 **Laptop --> Personal Use**
