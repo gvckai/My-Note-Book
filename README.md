@@ -10,6 +10,8 @@
 - `git status`
 - `git add <file Name>`
 - `git commit -m provide required massage in duble`
+**You can stage tracked modified files and commit them in a single command using the**
+- git commit -am "Your Commit Massage
 ## Please  use git pull before push
 ## Whenever we use  # git push -u origin main first time we get error  
 # How to resolve this error 
@@ -74,7 +76,7 @@
  ## Test the application daily base
 **DevOps Team should keep the application highly available , autoscale, and Security, Cost Optimisation**
 # What is Computer
-- A Device which has cpu RAM, Storage and OS is called Computer we can assigin  IP
+**A Device which has cpu RAM, Storage and OS is called Computer we can assigin  IP**
    
 **Laptop --> Personal Use**
 
