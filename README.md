@@ -12,7 +12,7 @@
 - `git commit -m provide required massage in duble`
 
 **You can stage tracked modified files and commit them in a single command using the**
-- git commit -am "Your Commit Massage
+- git commit -am "Your Commit Massage"
 ## Please  use git pull before push
 ## Whenever we use  # git push -u origin main first time we get error  
 # How to resolve this error 
@@ -59,8 +59,8 @@
 - we should not complain above new organisatio approch based on theit requirement they build up 
 
 # Agail Process
-## Agail Process
- **Sprints**
+
+- Sprints
     - Sign-Up and Signin - Authontication and Authoraization
     - Product Calalogue
     - Cart
