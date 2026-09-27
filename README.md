@@ -128,14 +128,7 @@
  ## If you want create/generate kyes
   - `ssh-keygen -f devsecops` :provie *filename what we want* **It will create /generate  keyes public and pravite**
   - ssh : Secure shell, this is one protocall port no **22**
-  - Publick Key and Pravite Key locatis is  
-
-  - ## Absolute Path: from the begining *cd /c/home/vijay*
-  - ## Relative Path: from the current location *cd vijay*
-  - ## How to connect server *ssh -i my pravite kay username@ip address* 
-  - ## How to find user # *whoami*
-  - ## How to find user id information# *id* it shows user nsme and user id , group name group id 
-  - ## How to find which os we use# *uname* **command it will print system information**
+  - Publick Key and Pravite Key locatis is 
 
   # CRUD - 
      - Create 
@@ -169,4 +162,3 @@
 - *syntax* : `scp -r /path/local/foldername user@ip addess:/path/to/remote/destination/`
  - **If you want to copy file with directory we  : `-r` means recursive
  - **If you want cut / rename  the to the file we use `mv` command we use ` mv old file name new file name `mv **source and destination**
- - **cd .. - one step back**
