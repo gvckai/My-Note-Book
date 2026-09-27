@@ -17,7 +17,7 @@
   - git remote -v
   - 
 ## git remote set-url origin https://YOUR_TOKEN@github.com/gvckai/My-Note-Book.git
-- `Syntax:  git remote set-url origin https://YOUR_TOKEN@github.com/github-user-name/Repository-name.git
+- Syntax:  git remote set-url origin https://YOUR_TOKEN@github.com/github-user-name/Repository-name.git
 
 # Who are stakeholders
 -` Family :` Everyone part of the system are stackholders
