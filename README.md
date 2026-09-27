@@ -15,7 +15,9 @@
 - git commit -am "Your Commit Massage"
  - `a --all`    :Automatically stages all files that have been **modified** or **deleted**
  - `m Specifies`: the commit message directly inline
+
 **You can create custome command  in your Globle Git  configuration so you only have to type a single short command**
+
 - `git config --global alias.sync '!git pull && push'`
 
 ## Please  use git pull before push
