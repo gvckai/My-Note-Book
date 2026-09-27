@@ -23,9 +23,9 @@
 ## Please  use git pull before push
 ## Whenever we use  # git push -u origin main first time we get error  
 # How to resolve this error 
-  - Check repository in our system whic repository we are
-  - git remote -v
-  - 
+  - **Check repository in our system whic repository we are**
+  - **git remote -v**
+
 ## git remote set-url origin https://YOUR_TOKEN@github.com/gvckai/My-Note-Book.git
 - Syntax: # git remote set-url origin https://YOUR_TOKEN@github.com/github-user-name/Repository-name.git
 
