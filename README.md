@@ -25,6 +25,7 @@
              Evwryone of us should be happy
 - Bank: stackhilder fot bank , customers, employees, management and leadership,        investore, RBI, IT deporment, marketing, sales operation, security team, admin teams, partners, etc.. 
 
-**Schools** : -> Students, Teachers staff, Non teaching Staff, Leadership, Investers, Edication Deportment etc..
+**Schools** : -> Students, Teachers staff, Non teaching Staff, Leadership, Investers, Edication Deportment etc.
+
 **DeoOps** --> Teammembers, Management, Developers Testing Team, Operation Team, Admin Team,
 
