@@ -73,3 +73,8 @@
  ** Developers devlops Enter Your Last Name**
  ## Test the application daily base
 **DevOps Team should keep the application highly available , autoscale, and Security, Cost Optimisation**
+# What is Computer
+    -  A Device which has cpu RAM, Storage and OS is called Computer we can assigin  IP
+    **Laptop --> Personal Use**
+    **Server --> To host Application**
+    **Mobile --> to calling**
