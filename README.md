@@ -179,5 +179,12 @@
    - curl command is used in scripting and api
    - if you wan to see the content in the spot we use `cutl`
 - **If you want to search the perticuler ward in the file**
+    - `grep word name file name`
     - `cat filename | grep word name`
+- If you want to search content in the file , we use **grep** command
     - *Syntax: cat password | grep linux*
+    - *Syntax: cat /etc/passwd | grep -i Ramesh* # -i forgot case insensitive, It prints all wheater is is upper case and lower case
+       **i = K in-senstive**
+    - *Syntax: cat /etc/passwd | grep -in ramesh*# -n it prints line number in which line the word we search, if you want to line number 
+    - *Syntax: cat /etc/passwd | grep -inc ramesh* **it prints word , how many time it comes `C - Count the word in the file`cat /
+    - *Syntax: cat README.md | grep -iv* : It print verbose , it is used to print oposit word 
