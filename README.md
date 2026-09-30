@@ -188,3 +188,34 @@
     - *Syntax: cat /etc/passwd | grep -in ramesh*# -n it prints line number in which line the word we search, if you want to line number 
     - *Syntax: cat /etc/passwd | grep -inc ramesh* **it prints word , how many time it comes `C - Count the word in the file`cat /
     - *Syntax: cat README.md | grep -iv* : It print verbose , it is used to print oposit word 
+## head command
+ - $head file name
+      - **$ head README.md** : It prints 10 lines of the top by default 
+      - **$ tail README.md** : It prints 10  lines of bottem  by default
+**If you want to see particular lines like top 4 lines**
+  - $ 
+      -
+
+    # session-6
+## Backed Applications
+ - Youthink Chef 
+   - Java
+   - .Net
+   - Python
+   - Groovi
+   - Php
+   All these conneted to database, i will do the CRUD Oparation
+## Frontend Application
+ - Waiter
+   - HTML
+   - CSS
+   - JS
+   - ReactJS
+   - NodeJS
+## Database 
+- MS SQL
+- MY SQL
+- Postgress
+- Oracle
+- Kafka
+ 
