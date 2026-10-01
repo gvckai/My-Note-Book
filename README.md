@@ -111,7 +111,7 @@
  - if you can not access server are application
    - First check with Intenet
    - Second DNS problem may be
-- *Server Problems**
+- **Server Problems**
  - 500 error in github outage
  - internal server erro
 ## How to work internet
@@ -193,9 +193,16 @@
       - **$ head README.md** : It prints 10 lines of the top by default 
       - **$ tail README.md** : It prints 10  lines of bottem  by default
 **If you want to see particular lines like top 4 lines**
-  - $ 
-      -
-
+  - **-I** case insencitive 
+  - **-v** : It will display whole words instead of selecting word 
+  - cat /etc/passwd | grep ramesh -in : It prints with line number
+  **-i : case insensitive**
+  **cat README.md | grep -in Linux**
+  **-n : It prints line numbe  whic line it is** *where linux word is not there*
+  **-c : Count of finds**
+  # Head Command 
+   - head command it print top 10 lines bydefault
+   - $ head -n3 : it prints top 3 lines 
     # session-6
 ## Backed Applications
  - Youthink Chef 
