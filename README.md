@@ -407,9 +407,77 @@ While opening file "/etc/ssh/sshd_config"
 `-` it indicates file
  `d` Directory
  - -rw-         r--            r--
-  **first three belongs to Owner** `rw-`  **u - Woner**
+  **first three belongs to Owner** `rw-`  :**u - Woner**
 
-  **second three belongs to group** `r--` **g - Group**
-  
-  **thitd three belongs to others** `r--` **o - other**
+  **second three belongs to group** `r--` :**g - Group**
+
+  **thitd three belongs to others** `r--` :**o - other**
+
+  ## If you want to update permission to user  
+   - if you want to give permission by using **chmod u+x file name**
+   - -rw-r--r--. 1 ramesh devops 0 Oct  3 14:13 devops.txt
+   - `chmod o+x devops.txt`
+   - uid=1001(ramesh) gid=1002(devops) groups=1002(devops) 
+     - I want to add Excute permission of file owner
+      - chmod u+x file name
+      - -**rwxr**--r--. 1 ramesh devops 0 Oct  3 14:13 devops.txt
+  - I want to give write permission group user
+   - chmod g+w devopes.txt **w-r** : **-rwxrw-r--. 1 ramesh devops 0 Oct  3 14:13 devops.txt**
+# I want to give permission for all groups 
+ - **[ramesh@ip-172-31-45-226 ~]$ chmod ugo+rwx devops.txtt** : -rwxrwxrwx. 1 ramesh devops 0 Oct  3 14:13 devops.txt
+# Ownership
+## I want to give ownership to suresh
+ - **If you want to cange ownership for file**
+ - **chown user:group <file/folder>**
+ - If you want to cahnge ownership root user only change **not only owner**
+ - **a file ownership can be only changed by root user**
+ - **chown ramesh:
+ - **chown suresh /tmp/sre.txt** : changed by root user
+ ## if you want to cahnges ownership of group 
+  - **chown :groupname and filename or folder**
+  - `chown :devops-trainee` sre **-rw-r--r--. 1 suresh devops-trainee  0 Oct  3 15:48 sre.txt**
+ ## if you want to create user
+  - **useradd sureh** : 
+ # Admin Access 
  
+ ## How to give sudo access  to ramesh user 
+  - There are multiple ways 
+  - Simple Way is .......?
+  - **add him to weel group** - how can i add secondry group to ramesh
+  - **usermod -aG wheel ramesh**
+  - `usermod -aG secondry group name and username
+  - **a** : append
+  - **G** : Secondry Group
+  - **where the sudoer info**: `vim /etc/sudoers` **This is main configuration file** without cahnging here
+  - There is another optin is  **vim/etc/sudoers.d or  cd /etc/sudoers.d/ ** we create file
+   - ls -l :  cat 90-cloud-init-users
+    - cat  cat 90-cloud-init-users
+     - # User rules for ec2-user
+       - ec2-user ALL=(ALL) NOPASSWD:ALL **like this you can add in the file 
+        - Ex: ramesh ALL=(ALL) NOPASSWD:ALL : **Dont ask passwor**
+         - ramesh (ALL=ALL) ALL **This is equivalant to adding ramesh to wheel group**
+## If you want to remove from group, there is command is 
+ - **gpasswd -d ramesh whell** `delete user rame from wheel group`
+  - `id remesh` : uid=1001(ramesh) gid=1002(devops) groups=1002(devops),10(wheel)
+  - `gpasswd -d ramesh wheel`
+  - craete ramesh file in sudoer.d `vim /etc/sudoers.d/ramesh` and change the permission for ramesh file**440**
+  - **chmod 440 ramesh**
+  - **If you dont want to ask passwd for ramesh** 
+   - create file in sudoer.d/ and provide user name `ramesh ALL(ALL) NOPASSWD:ALL
+  **If you want to know packes where it is** : **which useradd**
+   - # which useradd : 
+    - `/usr/sbin/useradd`
+  - If you want to give access for specifit command for ramesh user
+    - provide in ramesh file in the sudoer,d folder `ramesh ALL(ALL) NOPASSWD:usr/sbin/useradd
+    - If you want to check the commed 
+    - visudo -c
+## 
+Key based authentication
+-------------------------
+- 1 ramesh should generate keys
+- 2 ramesh send his public key to admin
+- 3 admin will add that public key into ramesh home folder
+- 4.admin told to ramesh to login server
+- 5 ssh -i ramesh-private-key ramesh@IP 
+
+  ```
