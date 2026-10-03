@@ -312,6 +312,78 @@
     - **devops-trainee**
     - **devops-Junior**
     - **devops-senior**
-    - **devops-leam lead
-**why is group : for the 
+    - **devops-leam lead*
+**why is group : for the fxibility**
+- A group will have role 
+  - **Create User** `
+  - **add him into devops group**
+  **If you want to create we need admin access**
+    - `useradd user-name
+      - where is user information **etc/passwd** this is user information location
+## When you create user, Linux will create a group also ont he same user name
+ - **A user in Linux will have one primary group and 0 or more secondary groups**
+  - `#: useradd remesh` - it is used to create user - **root user has permission to create users**
+  - `id ramesh` - uid=1001(ramesh) gid=1001(ramesh) groups=1001(ramesh): **it print user id group id others id**
+  - **user must have, one primary group** 
+    - **If user id is zero, that meaning root user**
+   - #id - **It prints root user or current user**
+     - `uid=0(root) gid=0(root) groups=0(root) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023`
+        - Narmal user home folder is **/home/ramesh**
+         - **cat /etc/passwd | grep  ramesh** - ramesh:x:1001:1001::**/home/ramesh:**/bin/bash
+             
+- **If you want to create group**
+ - `groupadd devops` - **It is used to create group**
+ - `groupdell devops` - **It is used to delete group**
+  - how to to see the group user information
+    - **cat /etc/group** - it prints group names
+- **I want to add devops group to ramesh user**
+  - usermod -g <groupname> <username> **adding user to primary group**
+   - usermod -g  devops ramesh
+    - `id ramesh` - uid=1001(ramesh) gid=1002(devops) groups=1002(devops)
+   - small **-g** means primary group
+- **If you want to add secondary group devops-trainee to the ramesh**
+ - `usermod -aG secondary group name and username
+  - **-a** append
+  - **G** Secondary group
+**if you want to give primery access, you can add secondary group**
+**How to assign passwor to the user**
+ - **passwd username** - It is user to asign password to the user
+  - `passwd ramesh` provide the password to set the password
+   - if you want to connect to the server we required password to user
+  - we should do small configaration on configaration file **vim /etc/ssh/sshd_config**
+   - PasswordAuthentication no **you need cahnge in to yes** then only it will allow password authentication 
+     `PasswordAuthentication yes`
+   - PermitEmptyPasswords no
+   **while i am modifing vim /etc/ssh/sshd_config**
+   `E325: ATTENTION` Found a swap file by the name "/etc/ssh/.sshd_config.swp"
+          owned by: root   dated: Sat Oct 03 01:39:54 2026
+         file name: /etc/ssh/sshd_config
+          modified: no
+         user name: root   host name: ip-172-31-45-226.ap-southeast-2.compute
+        process ID: 31345 (STILL RUNNING)
+While opening file "/etc/ssh/sshd_config"
+             dated: Sat Oct 03 01:44:45 2026
+      NEWER than swap file!
+
+(1) Another program may be editing the same file.  If this is the case,
+    be careful not to end up with two different instances of the same
+    file when making changes.  Quit, or continue with caution.
+(2) An edit session for this file crashed.
+    If this is the case, use ":recover" or "vim -r /etc/ssh/sshd_config"
+    to recover the changes (see ":help recovery").
+    If you did this already, delete the swap file "/etc/ssh/.sshd_config.swp"
+    to avoid this message.`
+  **It is showing error li process ID: 31345 (STILL RUNNING)**
+  **I solved like This by using Kill command**
+  **check if another terminal session or user is currently editing the file:**
+  
+  - ps -aud process ID
+  - `sudo ps aux | grep 31345` find the process and kill process
+  **If the process is active in another session: Switch to that terminal or exit Vim safely there**
+  - `sudo kill -9 31345`
+## Step 2: Compare the swap file with the current file
+ - Before recovering or deleting anything, check if the swap file contains changes you care about:
+  - sudo vim -r /etc/ssh/sshd_config
+   - if you want the swap file's changes: Save and exit (:wq).
+   - if you don't need the swap file's changes: Quit without saving (:q!).
 
