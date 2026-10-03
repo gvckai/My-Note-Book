@@ -270,6 +270,13 @@
  -  **-t, --list                 list the contents of an archive**
  -  **-v, --verbose              verbosely list files processed**
  # Editors vim - Visually improved editor
+ ## VIM Editor
+  - command mod 
+   - **:wq** - write and quit
+   - **:q** - quit
+   - **:q!** - fource quit- without saving
+
+   - 
   - There are three more vim edito
    - Esc mode
    - Command mode
@@ -277,4 +284,34 @@
 **when you create file wit vim, it is open in Esc mode defaultly**
  - if you want to go command mode - press **:** 
  - if you want to go insert mode - press **i** if it is Esc mode, if it is command mod press **Esc** and **i**
+ ## if you want to delete wntair content in vi edito 
+ - **:%d**
+ # importent things
+## User Management
+**There are two types of users in Linux**
+-  $-dinots Narmal user
+-  #-de=dinots super/root user 
+- Super user home directory is **root**
+-  If you want admin access **sudo su -**
+**If you want to uper power $ sudo su - you can enter into root user**
+ - /root : root user home directory
+ - /home/user-name
+ - /home/ec2-user
+ - user means one human
+ - group a list of human / have one or more user
+ ## Authantication and Autherization 
+  - **Authenticati means prove your self**?
+  - **Autherization means, do you have access to the resource?**
+  - **Role      ->   Permission**
+  - **Ttainee   -> Read only permission**
+  - **Junior    -> write access**
+  - **Senior    -> Read, Write, Update**
+  - **TL        -> Read, write, update and Delete**
+
+  ## I will create some groups
+    - **devops-trainee**
+    - **devops-Junior**
+    - **devops-senior**
+    - **devops-leam lead
+**why is group : for the 
 
