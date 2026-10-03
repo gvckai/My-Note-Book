@@ -352,7 +352,7 @@
    - if you want to connect to the server we required password to user
   - we should do small configaration on configaration file **vim /etc/ssh/sshd_config**
    - PasswordAuthentication no **you need cahnge in to yes** then only it will allow password authentication 
-     `PasswordAuthentication yes`
+     `PasswordAuthentication yes` then It will allow it
    - PermitEmptyPasswords no
    **while i am modifing vim /etc/ssh/sshd_config**
    `E325: ATTENTION` Found a swap file by the name "/etc/ssh/.sshd_config.swp"
@@ -386,4 +386,28 @@ While opening file "/etc/ssh/sshd_config"
   - sudo vim -r /etc/ssh/sshd_config
    - if you want the swap file's changes: Save and exit (:wq).
    - if you don't need the swap file's changes: Quit without saving (:q!).
-
+ - `vim /etc/ssh/sshd_config`
+    - `PasswordAuthentication no` `Pleage change **PasswordAuthentication yes**
+ **If you want to check syntax whether is correct or not** 
+ - `sshd -t` --> check syntax of sshconfig
+ ## If you cahnge any configuration -
+  - **you need to restart service** 
+   - **systemctl restart sshd**
+   - **ssh ramesh@13.211.173.62** :**then we can connect to the server from anyware**
+  **This is password base authentication**
+   - [ramesh@ip-172-31-45-226 ~]$ touch devops.txt
+    - [ramesh@ip-172-31-45-226 ~]$ ll- >> -rw-r--r--. 1 ramesh devops 0 Oct  3 14:13 devops.txt
+**who is file owner her -ramesh is file owner 
+## Permissions
+ - **There are three types of permissions**
+  - **R-4 - Read**
+  - **W-2 - Write**
+  - **E-1 - Excute**
+## Owner        groups        Others
+`-` it indicates file
+ `d` Directory
+ - -rw-         r--            r--
+  **first three belongs to Owner** `rw-`  **u - Woner**
+  **second three belongs to group** `r--` **g - Group**
+  **thitd three belongs to others** `r--` **o - other**
+ 
