@@ -408,6 +408,8 @@ While opening file "/etc/ssh/sshd_config"
  `d` Directory
  - -rw-         r--            r--
   **first three belongs to Owner** `rw-`  **u - Woner**
+
   **second three belongs to group** `r--` **g - Group**
+  
   **thitd three belongs to others** `r--` **o - other**
  
