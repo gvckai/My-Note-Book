@@ -471,13 +471,87 @@ While opening file "/etc/ssh/sshd_config"
     - provide in ramesh file in the sudoer,d folder `ramesh ALL(ALL) NOPASSWD:usr/sbin/useradd
     - If you want to check the commed 
     - visudo -c
-## 
-Key based authentication
+## vi Editor 
+ - **:q --> quit**
+ - **:wq --> write and quit**
+ - **:q! --> fource quit without saving**
+ - **:wq! --> fource quit by savining**
+ - **:set nu --> set number**
+ - **:set nonu --> set nonumbers**
+ - **:3 --> go to line number 3**
+ - **:3d --> delete line number three**
+ - **:4, 5d --> delete 4 and 5 line**
+ - **:%d --> delete entair **
+ - **:s/word to searc/word to replace/**
+ - **:%s/word to search/word to repale/g --> replace entair**
+ - **/word to search --> forward**
+ - **?word to search --> backward searc**
+ ## Esc Mode
+  - **u for undo**
+  - **Ctrl+r for --> redo**
+  - **yy --> copy**
+  - **p --> past**
+  - **dd --> cut**
+  - **gg --> top of the file**
+  - **shift G --> bottom of the file**
+
+
+
+## User Management
+- **useradd --> to create user**
+- **id ramesh--> to searc user information**
+- **/etc/passwd --> user info**
+- **/etc/group --> group information**
+- **/etc/ssh/sshd_config --> ssh configuration**
+- **/etc/sudoers --> sudo info**
+- **/etc/sudoers.d/ --> extra configuration**
+- **passwd ramesh --> password set up for ramesh**
+- **usermod -g devops ramesh --> set deveops as primary group to rames**
+- **usermod -aG tester ramesh --> appends testers as secondry group to ramesh**
+- **gpasswd -d ramesh tester**
+
+
+## SSH Key based authentication
 -------------------------
 - 1 ramesh should generate keys
 - 2 ramesh send his public key to admin
 - 3 admin will add that public key into ramesh home folder
 - 4.admin told to ramesh to login server
 - 5 ssh -i ramesh-private-key ramesh@IP 
+## Process
+  1. **ramesh should genarate private and public key**
+  2. **send public key to admin**
+  3. **admin will create user**
+  4. **He will go to ramesh directory and create .ssh folder**
+  5. **in side .ssh folder, there should be a file authorized_key, past public key her**
+  6. **.ssh should be on ramesh, .ssh max permission should be 700**
+  7. **authorized_key max permision should be 600**
+  8. **chown ramesh:ramesh -R .ssh change the ownership** 
+  9. **passwd ramesh - create password**
+  10. **if you want to give password less autentication please follwow bellow steps**
+      - root user only: vim /etc/sudoers.d/ramesh
+        - write down in the ramesh file **ramesh ALL=(ALL) NOPASSWD:ALL**
+  10. **usermod -aG whell ramesh --> give to sudopemissions to ramesh method one**
+
+# If emploee leaves the oranization
+-  if you want to remove from system please follow steps
+ 1. id ramesh check which group attached
+    - id ramesh `uid=1001(ramesh) gid=1001(ramesh) groups=1001(ramesh),10(wheel)`
+    - gpasswd -d ramesh wheel, check **:id ramesh**
+    **we should take inacial mode Ex: **usermod -g ramesh ramesh**
+ 2. first remove group access whta he has--> remove from all the groups
+ 3. lock him immidiatly : usermod -L ramesh **lock the user account** or **usermod -e 1 ramesh** **pkill -u ramesh**
+    **who logged in the system* `:who`: 
+ 4. kill him existin sessions **: pkill -u ramesh** : kill fourcefully
+ 5. take his home folder back-up **tar -czvf /back-up/ramesh-boardin.tar.gz /home/ramesh**
+ 6. searc his any other files in the system, if he has files,-take back-up then delete user or him from the oranisation
+ ## find command sysntax
+ -  find <where to search> <option> <what to search>
+    - find / -name "*.log" - **It prints all files with .log extenction**
+    - find / -name "*passwd*"
+    - find / -type d "*ramesh"
+    - find / -user ramesh
+  7. userdell -r ramesh- it remove 
+  # we can write shell-script all above process
 
   ```
