@@ -508,7 +508,8 @@ While opening file "/etc/ssh/sshd_config"
 - **passwd ramesh --> password set up for ramesh**
 - **usermod -g devops ramesh --> set deveops as primary group to rames**
 - **usermod -aG tester ramesh --> appends testers as secondry group to ramesh**
-- **gpasswd -d ramesh tester**
+- **The gpasswd -d command removes a user from a specified group in Linux**
+ - syntax `gpasswd -d <username> <groupname>` **gpasswd ramesh wheel**
 
 
 ## SSH Key based authentication
