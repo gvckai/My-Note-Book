@@ -170,4 +170,31 @@
 ```
    mkdir /app
 ```
+# Create Application User
+- **Add a system user to run the application**
+- - If we run human or root user to run the application
+ 1. they may have more access in linux, if one server is compromised, their credentails are leaked
+  - once credentials are leaked they can accedd all files and curruped the files
+  - here there are more priveleges issues
+2. if hacked blast radius is more
+3. more files and folder are on human names   
+4. what if the human resigns the company - if the application will be runned on his name 
+5. if we want to chande the name so here there will be downtime 
+6. auditing and accountablity  for this purpus
+## instade of running applications or services on human name credentials 
+ - **we use system users to limit blast radious and least priveleges**
+     - **System user will not have intaractive logins so no credentials, no login, no shell/terminal access also**
+# How to create system users:
+```
+useradd --system --home -d /app --shell /sbin/nologin --comment "expense system user" expense
+```
+or
+```
+useradd --system -m -d /app -s /sbin/nologin -c "expense system use" expense
+```
+  - Check whether expense user is created or no : 
+    ```
+    cat /etc/passwd |grep  expense
+    # expense:x:993:993:expense system use:/app:/sbin/nologin
+    ```
 
