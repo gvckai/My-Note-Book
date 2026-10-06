@@ -86,7 +86,88 @@
  - background process- 
 ## If any application is not running
 -  **We must check**
-     - Check tha service : systemctl status nginx
-     - netstat -lntp | grep nginx
-     - ps -ef | grep nginx
-      - still there is a proble : then **go and check the logs**
+     - **Check tha service : systemctl status nginx**
+          - **netstat -lntp | grep nginx**
+          - **ps -ef | grep nginx**
+          - **still there is a problem** : then **go and check the logs**
+# Session 06
+
+## Three Tier Architecture
+ Raw : Data 
+  - Chef : Backend application : (Java, .Net, python, Groovi php etc)
+         - **backend applicatins connect with database and do CRUD Operation** *This is Developer Job*
+  - Waiter : frontend applications (**HTML, CSS, Java Script, ReactJS, NodeJS**)
+          - there are all UI Experiance
+  - Captain : Loadbalencer 
+
+  - 1 tier Architecture is every thing is in single server (**Frontend+backend and database**)
+   - One Linux Server
+# Two tier Architecture
+ - 2 linux Servers
+# Three Tier Architecture
+ - 3 linux Servers
+  First we take Lodad balancer go to Fronted go to backend got Database
+   - some pleple called web/frontend/HTTP tier (Loadbalancer + frontend)
+   - Some people called App/backend / middle ware tier (backend)
+   - Somple people called database tier      
+
+# Database Technolagies 
+ - MS-SQL
+ - MySQL
+ - Postgress
+ - Oricale
+ - Kafka
+ - MagoDB 
+**Data Base Admin --> Install Data Base, Upgrade, backup, restore, create schema, monitor, scall them Clustring them**
+- Install- mysql serve
+     - **Install the MySQL 8.0 Community Repository**
+     -     sudo dnf install -y https://dev.mysql.com/get/mysql80-community-release-el9-1.noarch.rpm
+     - **Import the Official GPG Key (to prevent GPG verification errors):**
+          - sudo rpm --import https://repo.mysql.com/RPM-GPG-KEY-mysql-2023
+     - **Install the MySQL Server Package:**
+          - sudo dnf install -y mysql-community-server
+          - systemctl status mysql
+          - systemctl start mysqld
+          - systemctl status mysqld
+          - systemctl enable mysqld
+          - netstat -lntp : ****MySql Pot : 3306**
+          - ps -ef | grep mysqld
+          - sudo grep 'temporary password' /var/log/mysqld.log
+            - Copy the passwod safeside
+            - mysql -u root -p
+             - provide temporary password
+             - **change default password** : 
+             ```
+             mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY 'V@jay*123*';
+             ```
+
+             SHOW DATABASES;
+
+
+
+# Session07
+## Backend Procezer
+1. we need to install programming ganduage runtime
+2. Create one directory to download the code
+3. Download the code 
+4. install dependies or libraries
+
+# Install Node.JS
+ - by default Node.Js 16 is available on the system enable install version 24
+ - dnf module lit nodejs - **list the nodejs version available**
+ - dnf list nodejs* 
+   - **see which Node.js versions are available in the Amazon Linux 2023 repositories, run:**
+- dnf install nodejs -y - `If we install, we dont know which version is installed so`
+**Conform the version from the developers** then We should install particuler version
+- developer conformed 24 version
+## First desible the default version
+ - dnf module disable nodejs -y
+ - dnf module enable nodejs:24 -y
+ - dnf install nodejs -y 
+ - My self iI install **dnf install nodejs24.x86_64 -y**
+ - Check the version : **node -v**
+ ## Set up Application directory
+```
+   mkdir /app
+```
+
