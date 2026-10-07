@@ -188,7 +188,7 @@
 ```
 useradd --system --home -d /app --shell /sbin/nologin --comment "expense system user" expense
 ```
-or
+   
 ```
 useradd --system -m -d /app -s /sbin/nologin -c "expense system use" expense
 ```
@@ -197,4 +197,10 @@ useradd --system -m -d /app -s /sbin/nologin -c "expense system use" expense
     cat /etc/passwd |grep  expense
     # expense:x:993:993:expense system use:/app:/sbin/nologin
     ```
-
+     - **--system**       :Creates a system user (UID under 1000) reserved for background processes and services.
+     - **-m**	          :Creates the home directory (/app) if it does not already exist.
+     - **-d /app**	     : Specifies /app as the custom home directory path.
+     - **s /sbin/nologin**: Restricts interactive shell login for safety (standard on Amazon Linux).
+     - **-c "expense system user"**	
+                         : Adds a comment/description string to the /etc/passwd record.
+     - **expense**	     : The username to create.
