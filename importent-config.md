@@ -2,4 +2,6 @@
 
 | Configuration File | Paths | Discription |
 |---|---|---|
-| Passwd | /etc/passws | passwd file contains users |
+| Passwd | /etc/passws | user info |
+| id ramesh|           | it print ramesh user details |
+| group | /etc/group | group info |
