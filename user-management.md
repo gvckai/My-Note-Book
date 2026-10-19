@@ -4,6 +4,7 @@
 - user -> a human
 - group -> a list of humans a group have one or more user
 - authentication (Prove yourself) and authorization ( do you have access to this resource)
+
 **Authorization**
 
 | Role | Permissions |
