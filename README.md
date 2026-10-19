@@ -26,8 +26,8 @@
   - **Check repository in our system whic repository we are**
   - **git remote -v**
 
-## git remote set-url origin https://YOUR_TOKEN@github.com/gvckai/My-Note-Book.git
-- Syntax: # git remote set-url origin https://YOUR_TOKEN@github.com/github-user-name/Repository-name.git
+## git remote set-url origin https://gvckai:<YOUR_TOKEN>@github.com/gvckai/My-Note-Book.git
+- Syntax: # git remote set-url origin https://gvckai:YOUR_TOKEN@github.com/github-user-name/Repository-name.git
 
 # Who are stakeholders
 
