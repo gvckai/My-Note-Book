@@ -6,6 +6,7 @@
 - authentication (Prove yourself) and authorization ( do you have access to this resource)
 Authorization
 ===============
+
 | Role | Permissions |
 |---|---|
 | Trainee | Read only access |
