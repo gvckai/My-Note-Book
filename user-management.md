@@ -38,3 +38,27 @@ A group will have role -> permission
 - if you want to give the access temperary you will add as a secondary group
 - set password for ramesh
  - passwd ramesh
+# Permisssions 
+ - There are three types of permissions
+  - Read 4
+  - write 2
+  - exute 1
+# Ownership Change
+ useradd suresh
+
+ # Admin Access 
+**add him to wheel group**
+Step 1
+- usermod -aG group name and username
+- usermod -aG wheel ramesh - wheel group has admin access: 
+Main configuration File 
+ - /etc/sudoers -> this main sudoers configuration file
+ - cd /etc/sudoers.d/-
+ vim /etc/sudoers.d/ramesh
+  ramesh ALL=(ALL:ALL) ALL -> equivalant to adding ramesh to wheel group
+  ramesh ALL=(ALL) NOPASSWD:ALL - dont ask password
+  ## How to remove from group 
+  - **syntax**: **gpasswd -d ramesh wheel - delete ramesh from wheel group**
+  ## sudoer file syntax
+  - sudoer -c
+                             username wheelgroup name
