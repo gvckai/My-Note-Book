@@ -60,5 +60,20 @@ Main configuration File
   ## How to remove from group 
   - **syntax**: **gpasswd -d ramesh wheel - delete ramesh from wheel group**
   ## sudoer file syntax
-  - sudoer -c
+  - **sudoer -c**
+  - **chmod 440 /etc/sudoers.d/ramesh**
                              username wheelgroup name
+## I will take ramesh only user management 
+ - ramesh ALL=(ALL:ALL) NOPASSWD:ALL
+ - ramesh ALL=(ALL:ALL) NOPASSWD: /usr/sbin/useradd - he has only user add permission
+ - ramesh ALL=(ALL:ALL) NOPASSWD: /usr/sbin.useradd, /usr/sbin/usermod
+
+ ## Key Base Authentication
+  1. Ramesh should generate keys : he new joined 
+  2. Ramesh should send his public key to admin
+  3. Admin will add his public key into ramesh home folder
+  4. admin inform to ramesh you login 
+
+  syntac ssh -i private-ky ramesh@IP 
+
+
