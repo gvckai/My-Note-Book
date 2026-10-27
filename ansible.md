@@ -24,7 +24,7 @@
   8. loading data if necessary
   9. starting the server
   
-  **These are all Configuration**
+  **Above these are all Configuration**
     
 
 | Ansible | Chef | Salt Stack |
