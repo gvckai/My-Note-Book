@@ -9,9 +9,10 @@
  **ssh ec2-user@172.31.31.45 -C "touch /tmp/devops.txt"
  - non interactive login
 
- ## Ansible ->  Configuration Manage Ment
+ ## Ansible ->  
  ![My Image](./ansible.svg)
-  - plain server -> ready to host application
+ **Configuration Manage Ment**
+   - plain server -> ready to host application
 
   **each and every thing is configuring the server like**
 
