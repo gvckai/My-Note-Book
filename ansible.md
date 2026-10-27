@@ -10,6 +10,7 @@
  - non interactive login
 
  ## Ansible ->  Configuration Manage Ment
+ ![My Image](./ansible.svg)
   - plain server -> ready to host application
 
   **each and every thing is configuring the server like**
@@ -27,7 +28,7 @@
   **Above these are all Configuration**
     
 
-| Ansible | Chef | Salt Stack |
+| **Ansible** | **Chef** | **Salt Stack** |
 |---|---|---|
 | **The No-Agent & Easy** | **Strict Enterprise** | **The "Lightning-Fast"** |
 | **Agentless and Push-based** | **Agent-based and Pull-based.**| **Master-Minion (Agent-based) with Ultra-Fast Messaging**|
